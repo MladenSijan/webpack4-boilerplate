@@ -12,8 +12,6 @@ const FONTS = {
         loader: "file-loader",
         options: {
             name: "[hash].[ext]",
-            outputPath: "fonts/",
-            publicPath: "/build/fonts/"
         },
     },
 }
@@ -25,8 +23,6 @@ const IMAGES = {
             loader: 'file-loader',
             options: {
                 name: '[hash].[ext]',
-                outputPath: 'images/',
-                publicPath: "/build/images/"
             }
         },
         {
@@ -63,7 +59,6 @@ module.exports = {
     output: {
         filename: "build.js",
         path: PATH.build,
-        publicPath: "/build/",
     },
     module: {
         rules: [

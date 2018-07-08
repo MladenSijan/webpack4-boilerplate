@@ -42,6 +42,9 @@ const PLUGINS = [
 ]
 
 module.exports = merge(baseConfig, {
+    output: {
+        publicPath: "/build/"
+    },
     mode: "development",
     module: {
         rules: [

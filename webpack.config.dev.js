@@ -35,6 +35,14 @@ const DEVSERVER = {
     overlay: true,
     open: true,
     compress: true,
+    before: function (app) {
+        var arr = ['/test-response.json'];
+        for (let i = 0; i < arr.length; i++) {
+            app.post(arr[i], function (req, res) {
+                res.redirect(arr[i]);
+            });
+        }
+    }
 }
 
 const PLUGINS = [

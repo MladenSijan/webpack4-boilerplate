@@ -1,45 +1,50 @@
 {
-  "name": "webpack4-boilerplate",
-  "version": "1.0.0",
-  "description": "Wepback 4 Boilerplate with Sass, Babel and HMR",
-  "email": "abra.kadaaabra@yandex.ru",
-  "scripts": {
-    "start": "nodemon --watch webpack.config.dev.js --exec \"webpack-dev-server --config webpack.config.dev.js\"",
-    "build": "webpack --config webpack.config.prod.js"
-  },
-  "keywords": [
-    "webpack4",
-    "boilerplate",
-    "Sass",
-    "Babel",
-    "HMR"
-  ],
-  "author": "Artem Kostelnyuk",
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^8.6.5",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.11",
-    "cssnano": "^4.0.0",
-    "fast-sass-loader": "^1.4.5",
-    "file-loader": "^1.1.11",
-    "image-webpack-loader": "^4.3.1",
-    "mini-css-extract-plugin": "^0.4.1",
-    "node-sass": "^4.9.1",
-    "nodemon": "^1.17.5",
-    "optimize-css-assets-webpack-plugin": "^4.0.3",
-    "postcss-loader": "^2.1.5",
-    "resolve-url-loader": "^2.3.0",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.3"
-  }
+    "name": "webpack4-boilerplate",
+    "version": "1.0.0",
+    "description": "Wepback 4 Boilerplate with Sass, Babel and HMR",
+    "email": "abra.kadaaabra@yandex.ru",
+    "scripts": {
+        "start": "nodemon --watch webpack.config.dev.js --exec \"webpack-dev-server --config webpack.config.dev.js\"",
+        "build:prod": "webpack --config webpack.config.prod.js",
+        "build:dev": "sourcemap='true' webpack --config webpack.config.prod.js"
+    },
+    "keywords": [
+        "webpack4",
+        "boilerplate",
+        "Sass",
+        "Babel",
+        "HMR"
+    ],
+    "author": "Artem Kostelnyuk",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^8.6.5",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "clean-webpack-plugin": "^0.1.19",
+        "css-loader": "^0.28.11",
+        "cssnano": "^4.0.0",
+        "fast-sass-loader": "^1.4.5",
+        "file-loader": "^1.1.11",
+        "image-webpack-loader": "^4.3.1",
+        "mini-css-extract-plugin": "^0.4.1",
+        "node-sass": "^4.9.1",
+        "nodemon": "^1.17.5",
+        "optimize-css-assets-webpack-plugin": "^4.0.3",
+        "postcss-loader": "^2.1.5",
+        "resolve-url-loader": "^2.3.0",
+        "sass-loader": "^7.0.3",
+        "style-loader": "^0.21.0",
+        "uglifyjs-webpack-plugin": "^1.2.7",
+        "webpack": "^4.15.1",
+        "webpack-cli": "^3.0.8",
+        "webpack-dev-server": "^3.1.4",
+        "webpack-merge": "^4.1.3"
+    },
+    "dependencies": {
+        "domready": "^1.0.8",
+        "normalize-scss": "^7.0.1"
+    }
 }

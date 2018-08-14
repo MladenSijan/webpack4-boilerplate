@@ -63,5 +63,6 @@ module.exports = merge(baseConfig, {
             })
         ]
     },
+    devtool: process.env.sourcemap ? "eval-source-map" : "none",
     plugins: PLUGINS
 })

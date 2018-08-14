@@ -66,5 +66,9 @@ module.exports = {
             FONTS,
             IMAGES
         ]
+    },
+    resolve: {
+        extensions: ['.js'],
+        modules: [path.resolve(__dirname, 'src', 'js'), 'node_modules']
     }
 };

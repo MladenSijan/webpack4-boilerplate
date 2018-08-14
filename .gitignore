@@ -132,7 +132,7 @@ $RECYCLE.BIN/
 .tmp/
 
 # Webpack
-dist/build
+# dist/build
 
 
 ### SublimeText ###
